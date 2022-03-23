@@ -1,0 +1,320 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-03-23 16:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: master_preset.xml:42(combo:text|key:access)
+msgid "Access"
+msgstr ""
+
+#: master_preset.xml:72(text:text|preset:Parking|key:capacity)
+msgid "Capacity"
+msgstr ""
+
+#: master_preset.xml:74(check:text|preset:Parking|key:covered)
+msgid "Covered"
+msgstr ""
+
+#: master_preset.xml:42(combo:display_values|key:access)
+msgid "Customers"
+msgstr ""
+
+#: master_preset.xml:39(combo:text|key:fee)
+msgid "Fee"
+msgstr ""
+
+#: master_preset.xml:32(list_entry:short_description|value:very_bad)
+msgid "High Clearance: light duty off-road vehicle"
+msgstr ""
+
+#: master_preset.xml:16(combo:text|key:lit)
+msgid "Lit"
+msgstr ""
+
+#: master_preset.xml:70(text:text|preset:Parking|key:name)
+msgid "Name"
+msgstr ""
+
+#: master_preset.xml:12(combo:display_values|key:supervised) master_preset.xml:16(combo:display_values|key:lit) master_preset.xml:39(combo:display_values|key:fee)
+msgid "No"
+msgstr ""
+
+#: master_preset.xml:42(combo:display_values|key:access)
+msgid "No access"
+msgstr ""
+
+#: master_preset.xml:35(list_entry:short_description|value:impassable)
+msgid "No wheeled vehicle"
+msgstr ""
+
+#: master_preset.xml:33(list_entry:short_description|value:horrible)
+msgid "Off-Road: heavy duty off-road vehicle"
+msgstr ""
+
+#: master_preset.xml:9(combo:text|key:opening_hours)
+msgid "Opening Hours"
+msgstr ""
+
+#: master_preset.xml:48(text:text|key:operator)
+msgid "Operator"
+msgstr ""
+
+#: master_preset.xml:42(combo:display_values|key:access)
+msgid "Permissive"
+msgstr ""
+
+#: master_preset.xml:42(combo:display_values|key:access)
+msgid "Permit required"
+msgstr ""
+
+#: master_preset.xml:42(combo:display_values|key:access)
+msgid "Private"
+msgstr ""
+
+#: master_preset.xml:42(combo:display_values|key:access)
+msgid "Public"
+msgstr ""
+
+#: master_preset.xml:31(list_entry:short_description|value:bad)
+msgid "Robust Wheels: trekking bike, car, rickshaw"
+msgstr ""
+
+#: master_preset.xml:27(combo:text|key:smoothness)
+msgid "Smoothness"
+msgstr ""
+
+#: master_preset.xml:34(list_entry:short_description|value:very_horrible)
+msgid "Specialized off-road: tractor, ATV"
+msgstr ""
+
+#: master_preset.xml:12(combo:text|key:supervised)
+msgid "Supervised"
+msgstr ""
+
+#: master_preset.xml:28(list_entry:short_description|value:excellent)
+msgid "Thin Rollers: rollerblade, skateboard"
+msgstr ""
+
+#: master_preset.xml:29(list_entry:short_description|value:good)
+msgid "Thin Wheels: racing bike"
+msgstr ""
+
+#: master_preset.xml:30(list_entry:short_description|value:intermediate)
+msgid "Wheels: city bike, wheelchair, scooter"
+msgstr ""
+
+#: master_preset.xml:12(combo:display_values|key:supervised) master_preset.xml:16(combo:display_values|key:lit) master_preset.xml:39(combo:display_values|key:fee)
+msgid "Yes"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Asphalt"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Cobblestone"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Compacted"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Concrete"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Concrete lanes"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Concrete plates"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Dirt"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Fine gravel"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Grass"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Grass paver"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Gravel"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Ground"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Metal"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Mud"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Paved"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Paving stones"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Pebblestone"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Sand"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Sett"
+msgstr ""
+
+#: master_preset.xml:23(combo:text|key:surface)
+msgctxt "surface"
+msgid "Surface"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Unhewn cobblestone"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Unpaved"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Wood"
+msgstr ""
+
+#: master_preset.xml:23(combo:display_values|key:surface)
+msgctxt "surface"
+msgid "Woodchips"
+msgstr ""
+
+#: master_preset.xml:64(list_entry:display_value|preset:Parking|value:anchors)
+msgctxt "bicycle"
+msgid "Anchors"
+msgstr ""
+
+#: master_preset.xml:59(list_entry:short_description|preset:Parking|value:floor)
+msgctxt "bicycle"
+msgid "Area without racks/stands/..."
+msgstr ""
+
+#: master_preset.xml:65(list_entry:display_value|preset:Parking|value:bollard)
+msgctxt "bicycle"
+msgid "Bollard"
+msgstr ""
+
+#: master_preset.xml:63(list_entry:display_value|preset:Parking|value:building)
+msgctxt "bicycle"
+msgid "Building"
+msgstr ""
+
+#: master_preset.xml:59(list_entry:display_value|preset:Parking|value:floor)
+msgctxt "bicycle"
+msgid "Floor"
+msgstr ""
+
+#: master_preset.xml:66(list_entry:display_value|preset:Parking|value:ground_slots)
+msgctxt "bicycle"
+msgid "Ground slots"
+msgstr ""
+
+#: master_preset.xml:57(list_entry:display_value|preset:Parking|value:handlebar_holder)
+msgctxt "bicycle"
+msgid "Handlebar holder"
+msgstr ""
+
+#: master_preset.xml:67(list_entry:display_value|preset:Parking|value:informal)
+msgctxt "bicycle"
+msgid "Informal"
+msgstr ""
+
+#: master_preset.xml:61(list_entry:display_value|preset:Parking|value:lockers)
+msgctxt "bicycle"
+msgid "Lockers"
+msgstr ""
+
+#: master_preset.xml:51(item:name|preset:Parking)
+msgctxt "bicycle"
+msgid "Parking"
+msgstr ""
+
+#: master_preset.xml:60(list_entry:display_value|preset:Parking|value:rack)
+msgctxt "bicycle"
+msgid "Rack"
+msgstr ""
+
+#: master_preset.xml:62(list_entry:display_value|preset:Parking|value:shed)
+msgctxt "bicycle"
+msgid "Shed"
+msgstr ""
+
+#: master_preset.xml:56(list_entry:display_value|preset:Parking|value:stands)
+msgctxt "bicycle"
+msgid "Stands"
+msgstr ""
+
+#: master_preset.xml:55(combo:text|preset:Parking|key:bicycle_parking)
+msgctxt "bicycle"
+msgid "Type"
+msgstr ""
+
+#: master_preset.xml:58(list_entry:display_value|preset:Parking|value:wall_loops)
+msgctxt "bicycle"
+msgid "Wall loops"
+msgstr ""
+
+#: master_preset.xml:58(list_entry:short_description|preset:Parking|value:wall_loops)
+msgctxt "bicycle"
+msgid "Wheel benders"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: master_preset.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets version="0.1.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"    
+    shortdescription="Template Preset for Vespucci and JOSM"
+    description="Template preset for Vespucci and JOSM">
+<!--
+    Format description: https://josm.openstreetmap.de/wiki/TaggingPresets
+-->
+    <chunk id="oh">
+        <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+    </chunk>
+    <chunk id="supervised">
+        <combo key="supervised" text="Supervised" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_i18n="false" values_sort="false" match="none" editable="true"/>
+    </chunk>
+    <chunk id="supervised_lit_oh">
+        <reference ref="supervised"/>
+        <combo key="lit" text="Lit" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_i18n="false" values_sort="false" match="none" editable="true"/>
+        <optional>
+            <reference ref="oh"/>
+        </optional>
+    </chunk>
+    <chunk id="surface">
+        <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,woodchips,paving_stones,sett,cobblestone,unhewn_cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud"
+                                    display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Woodchips,Paving stones,Sett,Cobblestone,Unhewn cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface" match="none" />
+    </chunk>
+    <chunk id="surface_smoothness">
+        <reference ref="surface"/>
+        <combo key="smoothness" text="Smoothness" values_searchable="true" values_sort="false">
+            <list_entry value="excellent" short_description="Thin Rollers: rollerblade, skateboard"/>
+            <list_entry value="good" short_description="Thin Wheels: racing bike"/>
+            <list_entry value="intermediate" short_description="Wheels: city bike, wheelchair, scooter"/>
+            <list_entry value="bad" short_description="Robust Wheels: trekking bike, car, rickshaw"/>
+            <list_entry value="very_bad" short_description="High Clearance: light duty off-road vehicle"/>
+            <list_entry value="horrible" short_description="Off-Road: heavy duty off-road vehicle"/>
+            <list_entry value="very_horrible" short_description="Specialized off-road: tractor, ATV"/>
+            <list_entry value="impassable" short_description="No wheeled vehicle"/>
+        </combo>
+    </chunk>
+    <chunk id="fee_interval">
+        <combo key="fee" text="Fee" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_no_i18n="true" values_sort="false" editable="true"/>
+    </chunk>
+    <chunk id="facility_access">
+        <combo key="access" text="Access" values="yes,permissive,customers,private,permit,no" display_values="Public,Permissive,Customers,Private,Permit required,No access" match="none" values_sort="false"/>
+    </chunk>
+    <chunk id="parking_access_fee_operator_surface_smoothness">
+        <space/>
+        <reference ref="facility_access"/>
+        <reference ref="fee_interval"/>
+        <text key="operator" text="Operator"/>
+        <reference ref="surface_smoothness"/>
+    </chunk>
+    <item name="Parking" name_context="bicycle" icon="transport_parking_bicycle.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:amenity=bicycle_parking"/>
+        <space/>
+        <key key="amenity" value="bicycle_parking"/>
+        <combo key="bicycle_parking" text="Type" values_context="bicycle">
+            <list_entry value="stands" display_value="Stands" image="bicycle_parking_stand.jpg"/>
+            <list_entry value="handlebar_holder" display_value="Handlebar holder" image="bicycle_parking_handlebarholder.jpg"/>
+            <list_entry value="wall_loops" display_value="Wall loops" short_description="Wheel benders" image="bicycle_parking_wheelbenders.jpg"/>
+            <list_entry value="floor" display_value="Floor" short_description="Area without racks/stands/..." image="bicycle_parking_floor.jpg"/>
+            <list_entry value="rack" display_value="Rack" image="bicycle_parking_rack.jpg"/>
+            <list_entry value="lockers" display_value="Lockers" image="bicycle_parking_lockers.jpg"/>   
+            <list_entry value="shed" display_value="Shed" />   
+            <list_entry value="building" display_value="Building" />
+            <list_entry value="anchors" display_value="Anchors" />
+            <list_entry value="bollard" display_value="Bollard" />
+            <list_entry value="ground_slots" display_value="Ground slots" />   
+            <list_entry value="informal" display_value="Informal" />
+         </combo>
+         <optional>
+            <text key="name" text="Name"/>
+        </optional>
+         <text key="capacity" text="Capacity" value_type="integer"/>
+         <reference ref="parking_access_fee_operator_surface_smoothness"/>
+         <check key="covered" text="Covered"/>
+         <reference ref="supervised_lit_oh"/>
+    </item> <!-- Parking -->
+</presets>
