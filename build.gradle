@@ -16,6 +16,8 @@ buildscript {
     }
 }
 
+apply plugin: "com.github.breadmoirai.github-release"
+
 repositories {
     mavenLocal()
 	mavenCentral()
@@ -27,6 +29,7 @@ ext {
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
 	vespucci_preset_version = '1.14'
+	github_token = System.getenv('GITHUB_TOKEN')
 }
 
 dependencies {
@@ -203,6 +206,18 @@ task replaceVersion {
     ant.replaceregexp(match:'presets version="([0-9\\.]+)"', replace:"presets version=\"${version}\"", flags:'g', byline:true) {
         fileset(dir: '.', includes: 'master_preset.xml')
     }
+}
+
+githubRelease {
+    repo "bicycle-parking-preset"
+    targetCommitish "main"
+    token "${github_token}"
+    owner "simonpoole"
+    tagName "${version}"
+    releaseName "${version}"
+    body ""
+    releaseAssets new File(buildDir, 'gen').listFiles()
+    overwrite true
 }
 
 // generate everything

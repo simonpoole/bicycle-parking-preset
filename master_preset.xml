@@ -52,7 +52,7 @@
         <link wiki="Tag:amenity=bicycle_parking"/>
         <space/>
         <key key="amenity" value="bicycle_parking"/>
-        <combo key="bicycle_parking" text="Type" values_context="bicycle">
+        <combo key="bicycle_parking" text="Type" values_context="bicycle" values_sort="false">
             <list_entry value="stands" display_value="Stands" image="bicycle_parking_stand.jpg"/>
             <list_entry value="handlebar_holder" display_value="Handlebar holder" image="bicycle_parking_handlebarholder.jpg"/>
             <list_entry value="wall_loops" display_value="Wall loops" short_description="Wheel benders" image="bicycle_parking_wheelbenders.jpg"/>
