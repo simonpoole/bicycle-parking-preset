@@ -125,6 +125,7 @@ task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
 
 task josmZip(dependsOn: ["generateAndValidateJosm"], type: Zip) {
     baseName "${preset_name}-josm"
+    version ""
     destinationDir = new File(projectDir, 'gen')
     from ('icons/png')
     from ('gen/' + josm_preset_file)
@@ -159,6 +160,7 @@ task generateAndValidateVespucci(dependsOn: ["replaceVersion","vespucciIcons","c
 
 task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"], type: Zip) {
     baseName "${preset_name}"
+    version ""
     destinationDir = new File(projectDir, 'gen')
     from ('icons/png')
     from ('images')
@@ -216,8 +218,14 @@ githubRelease {
     tagName "${version}"
     releaseName "${version}"
     body ""
-    releaseAssets new File(buildDir, 'gen').listFiles()
+    releaseAssets new File(projectDir, 'gen').listFiles(new FilenameFilter() {
+        public boolean accept(File dir, String name) {
+            String lcName = name.toLowerCase();
+            return lcName.startsWith(preset_name) && lcName.endsWith(".zip");
+        }
+    })
     overwrite true
+    // dryRun true
 }
 
 // generate everything
